@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Hind+Siliguri:wght@300;600&display=swap');
+
+body{
+  max-width: 800px;
+  margin: auto;
+  height: 1000px;
+  background: linear-gradient(45deg, #9400D3, #B22222);
+}
+h1, h1 span,  h2, h3, div, ul, p{
+  margin: 0px;
+  padding: 0px;
+}
+
+:root{
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+header .main-logo{
+  font-family: 'Anton', sans-serif;  
+  font-size: 2rem;
+  color: rgb(251, 249, 246);
+  text-align: center;
+}
+
+header .main-logo span{
+  font-size: 1rem;
+  margin-top: 4px;
+  text-align: center;
+}
+
+header nav .main-menu{
+   display: flex;
+   list-style-type: none;
+   justify-content: space-around ;
+   margin-top: 8px;
+   margin: 0;
+   text-align: center;
+} 
+
+header nav .main-menu li a{
+  color: rgb(42, 42, 41);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 4px inset transparent ;
+  
+}
+
+header nav .main-menu li a:hover{
+  border: 4px inset #FFFFFF;
+}
+
+h2{
+  text-align: center;
+}
+
+@media (min-width: 550px){
+  header .main-logo{ 
+    font-size: 3rem;
+  }
+  
+  header nav .main-menu li a{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around ;
+    margin-top: 6px;
+    text-align: center;
+ } 
+   
+}
