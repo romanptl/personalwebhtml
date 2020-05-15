@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Hind+Siliguri:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300;500&display=swap');
 
 body{
   max-width: 800px;
   margin: auto;
-  height: 1000px;
+  height: 100%;
   background: linear-gradient(45deg, #9400D3, #B22222);
 }
 h1, h1 span,  h2, h3, div, ul, p{
@@ -15,18 +15,51 @@ h1, h1 span,  h2, h3, div, ul, p{
   font-family: 'Hind Siliguri', sans-serif;
 }
 
+
 header .main-logo{
-  font-family: 'Anton', sans-serif;  
+  font-family: 'Saira', sans-serif;
   font-size: 2rem;
   color: rgb(251, 249, 246);
   text-align: center;
 }
+
+header .main-photo {
+  background-image: url(../img/baby-yoda.jpeg);
+  min-height: 400px;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  color: white;
+  align-items: center;
+  padding: 10px 15px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  transition: .5s;
+}
+
+button:hover {background-position: right center;}
 
 header .main-logo span{
   font-size: 1rem;
   margin-top: 4px;
   text-align: center;
 }
+
 
 header nav .main-menu{
    display: flex;
@@ -35,6 +68,7 @@ header nav .main-menu{
    margin-top: 8px;
    margin: 0;
    text-align: center;
+   border: 1px solid transparent;
 } 
 
 header nav .main-menu li a{
@@ -42,12 +76,10 @@ header nav .main-menu li a{
   text-decoration: none;
   text-transform: uppercase;
   border: 4px inset transparent ;
-  
+
 }
 
-header nav .main-menu li a:hover{
-  border: 4px inset #FFFFFF;
-}
+
 
 h2{
   text-align: center;
@@ -64,6 +96,16 @@ h2{
     justify-content: space-around ;
     margin-top: 6px;
     text-align: center;
+    border: 1px solid transparent;
  } 
    
+}
+
+
+@media (min-width: 800px){
+  main .product-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5 px;
+  }
 }
