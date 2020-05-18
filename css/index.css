@@ -64,6 +64,24 @@ p {
   font-family: 'Saira', sans-serif;
 }
 
+.countdown {
+    font-family: var(--bold-font);
+    
+    text-align: center;
+    font-size: 30px;
+    color:#ffffff ;
+    padding-top: 30px;
+    border: 1px solid rgb(245, 245, 245);
+}
+#timer {
+    font-family: var(--bold-font);
+    font-weight: lighter;
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
 .product-list .product-card img.product-image {
   display: block;
   width: 100%;
