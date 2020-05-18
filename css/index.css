@@ -1,111 +1,217 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Saira:wght@200;300;400;500&display=swap');
 
 body{
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
   height: 100%;
-  background: linear-gradient(45deg, #9400D3, #B22222);
+  background: linear-gradient(45deg, rgb(110, 21, 148), rgb(199, 26, 26));
 }
-h1, h1 span,  h2, h3, div, ul, p{
+h1, h1 span,  h2, h3, h4, div, p{
   margin: 0px;
   padding: 0px;
 }
 
 :root{
-  font-family: 'Hind Siliguri', sans-serif;
+  scroll-behavior: smooth;
 }
 
-
-header .main-logo{
+header nav .main-logo{
   font-family: 'Saira', sans-serif;
+  font-size: 4rem;
+  color: rgb(245, 245, 245);
+  text-align: center;
+}
+
+header nav .main-logo span{
   font-size: 2rem;
-  color: rgb(251, 249, 246);
-  text-align: center;
-}
-
-header .main-photo {
-  background-image: url(../img/baby-yoda.jpeg);
-  min-height: 400px;
-  background-position: top;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-button {
-  text-decoration: none;
-  outline: none;
-  display: inline-block;
-  color: white;
-  align-items: center;
-  padding: 10px 15px;
-  margin: 10px 20px;
-  border-radius: 10px;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
-  background-size: 200% auto;
-  box-shadow: 0 0 20px rgba(0,0,0,.1);
-  transition: .5s;
-}
-
-button:hover {background-position: right center;}
-
-header .main-logo span{
-  font-size: 1rem;
-  margin-top: 4px;
-  text-align: center;
+  color: rgb(245, 245, 245);
 }
 
 
 header nav .main-menu{
-   display: flex;
-   list-style-type: none;
-   justify-content: space-around ;
-   margin-top: 8px;
-   margin: 0;
-   text-align: center;
-   border: 1px solid transparent;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around ;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border: 1px solid rgb(245, 245, 245);
+
 } 
 
 header nav .main-menu li a{
-  color: rgb(42, 42, 41);
-  text-decoration: none;
-  text-transform: uppercase;
-  border: 4px inset transparent ;
-
+font-size: 20px;
+ color: rgb(42, 42, 41);
+ text-decoration: none;
+ text-transform: uppercase;
+ background-color: transparent;
 }
 
+header nav .main-menu li a:hover{
+  color: black;
+  background-color: rgb(245, 245, 245);
+}
 
+main section .productdId{
+  padding: 1rem;
+  font-size: 3rem;
+}
 
 h2{
-  text-align: center;
+ text-align: center;
 }
+
+p {
+  font-family: 'Saira', sans-serif;
+}
+
+.product-list .product-card img.product-image {
+  display: block;
+  width: 100%;
+}
+
+.product-card{
+  margin: 6px;
+  border: 1px solid transparent;
+  padding: 1rem;
+}
+
+.mainProd{
+  list-style-type: none;
+}
+
+#mainNameProd{
+  text-align: center;
+  color: aliceblue;
+}
+
+#adoutProd{
+  text-align: justify;
+}
+
+.btnPrimary{
+  font-size: 14px;
+  margin-top: 15px;
+  color: #fff;
+  text-decoration: none;
+  background: transparent;
+  border-color: rgb(218, 218, 218);
+  padding: .7em 1.5em;
+  outline: none;
+}
+
+.modal-body{
+  background-color: #574a4a;
+  color: rgb(255, 255, 255);
+}
+
+.modal-body .form-text-text-muted{
+  color: rgb(255, 255, 255);
+}
+
+.callBack {
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
+}
+#callBack{
+  font-size: 2rem;
+}
+
+.callBack span{
+  font-size: 1rem;
+}
+
+.callBackText {
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-color: #131313;
+  padding: 4px;
+  margin-top: 5px;
+  align-items: center;
+}
+
+.formInput{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+.buttonSend{
+  justify-content: center;
+  background-color: #000000;
+  border-radius: 4px;
+  border: 2px solid rgb(255, 255, 255);
+  color: azure;
+}
+
+.info{
+  background: linear-gradient(20deg, rgb(179, 0, 0), rgb(109, 25, 143));
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  color: blanchedalmond;
+}
+
+.mainFooter{
+  margin: 5px;
+}
+
+.links{
+  text-align: right;
+}
+
+#end{
+  margin-top: 10px;
+}
+
+@media (min-width: 625px){
+  .callBack{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    margin-left: 20px;
+    align-items: center;
+  }
+  .formInput{
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 
 @media (min-width: 550px){
   header .main-logo{ 
     font-size: 3rem;
   }
-  
   header nav .main-menu li a{
     display: flex;
     list-style-type: none;
     justify-content: space-around ;
-    margin-top: 6px;
     text-align: center;
     border: 1px solid transparent;
  } 
    
 }
 
-
-@media (min-width: 800px){
+@media (min-width: 200px) {
   main .product-list{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5 px;
+    grid-template-columns: 1fr;
+    grid-gap: 3 px;
   }
 }
+
+@media (min-width: 625px){
+  main .product-list{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 950px){
+  main .product-list{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
